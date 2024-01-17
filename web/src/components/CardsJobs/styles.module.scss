@@ -1,0 +1,30 @@
+.cardsJobs{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 6px;
+    height: 100%;
+    gap: 10px;
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .redirectJob{
+        background-color: white;
+        width: 100%;
+        color: black;
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        &:hover{
+            filter: brightness(80%);
+        }
+    }
+    p{
+        font-size: 15px;
+    }
+}

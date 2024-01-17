@@ -5,10 +5,11 @@ import React from "react";
 import styles from "./styles.module.scss";
 
 const CardsJobs = (props: Jobs) => {
-  const { company, jobUrl, location, date, position, agoTime } = props;
+  const { company, jobUrl, location, date, position, agoTime, id } = props;
 
   return (
     <div className={styles.cardsJobs}>
+      {id}
       <div className={styles.logo}>
         <Image
           width={100}

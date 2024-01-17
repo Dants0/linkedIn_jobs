@@ -5,4 +5,5 @@ export interface Jobs {
   date: string;
   position: string;
   agoTime: string;
+  id: number;
 }

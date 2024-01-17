@@ -123,7 +123,7 @@ Query.prototype.getJobs = async function () {
       const jobs = $("li");
 
       resultCount = jobs.length;
-      // console.log("I got ", jobs.length, " jobs");
+      console.log("I got ", jobs.length, " jobs");
 
       parsedJobs = parseJobList(data);
       allJobs.push(...parsedJobs);

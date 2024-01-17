@@ -1,14 +1,14 @@
 class Jobs {
     jobSetupDefault(){
         const jobsDefault = {
-            keyword: "Development",
+            keyword: "",
             location: "Brazil",
-            dateSincePosted: "past Week",
+            dateSincePosted: "past month",
             jobType: "full time",
             remoteFilter: "remote",
-            salary: "80000",
-            experienceLevel: "associate",
-            limit: "10",
+            salary: "100000",
+            experienceLevel: "",
+            limit: "20",
             sortBy: "relevant",
         }
         return jobsDefault        
@@ -23,7 +23,7 @@ class Jobs {
             remoteFilter: "remote",
             salary: "100000",
             experienceLevel: "associate",
-            limit: "10",
+            limit: "100",
             sortBy: "relevant",
         }
         return jobsDefault   

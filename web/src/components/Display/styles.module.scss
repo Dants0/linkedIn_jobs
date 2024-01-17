@@ -1,5 +1,4 @@
 .container{
-
     .content{
         margin: 10px 100px 5px 100px;
         display: flex;
@@ -28,6 +27,20 @@
             padding: 10px;
             border-radius: 10px;
         }
-    }   
+    }
+    .navigator{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        height: 100px;
+        align-items: center;
+        background-color:white;
+        button{
+            color: black;
+        }
+    } 
+    .jobsSearchLength{
+        margin: 100px;
+    }  
 }
 

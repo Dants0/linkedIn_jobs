@@ -2,7 +2,7 @@
 
 Clone this repository
 ```bash
-https://github.com/Dants0/linkedin_jobs.git
+https://github.com/Dants0/linkedIn_jobs.git
 ```
 
 After cloning the repository you should install all of the dependencies

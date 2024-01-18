@@ -13,7 +13,7 @@ After cloning the repository you should install all of the dependencies
 
 ```bash
 
-npminstall
+npm install
 
 ```
 
@@ -21,7 +21,7 @@ After install all of the dependencies you should then run app
 
 ```bash
 
-npmrundev
+npm run dev
 
 ```
 
@@ -41,7 +41,7 @@ And run the installation
 
 ```bash
 
-npminstall
+npm install
 
 ```
 
@@ -49,7 +49,7 @@ After install all of the dependencies you should then run app
 
 ```bash
 
-npmrunstart
+npm run start
 
 ```
 

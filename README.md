@@ -5,7 +5,7 @@ Clone this repository
 
 ```bash
 
-https://github.com/Dants0/linkedin_jobs.git
+https://github.com/Dants0/linkedIn_jobs.git
 
 ```
 

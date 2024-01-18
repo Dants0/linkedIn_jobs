@@ -5,13 +5,17 @@ import styles from "./styles.module.scss";
 import { Jobs } from "@/interfaces/Jobs";
 import CardsJobs from "../CardsJobs/CardsJobs";
 import { ApiHandler } from "@/interfaces/ApiHandler";
+import { ApiHandlerConfig } from "@/api/ApiHandler";
 
 const Display = () => {
   const [jobs, setJobs] = useState<Jobs[]>([]);
   const [apiHandler, setApiHandler] = useState<ApiHandler>({ message: "" });
   const [loading, setLoading] = useState<boolean>(true);
   const [message, setMessage] = useState<string>("");
+  const [searchJob, setSearchJob] = useState<string>("");
   const [currentIndexToDisplay, setCurrentIndexToDisplay] = useState<number>(0);
+  
+
 
   useEffect(() => {
     const getAllJobs = async () => {
@@ -24,8 +28,7 @@ const Display = () => {
             setLoading(false);
           }
 
-          const baseUrl = "http://localhost:8080/api/jobs";
-          const response = await axios.get(baseUrl);
+          const response = await axios.get(ApiHandlerConfig.getAllJobs);
           const data = response.data;
           const messageStatus = response.statusText;
 
@@ -55,7 +58,13 @@ const Display = () => {
       });
   }, []);
 
-  // console.log(jobs);
+  
+  // function searchJobApi(keyword){
+  //   axios.get(ApiHandlerConfig.getSearchedJob).then( async (response) => {
+  //     const data = await response.data;
+
+  //   })
+  // }
 
   const handleBack = () => {
     if (currentIndexToDisplay >= 6) {
@@ -82,6 +91,10 @@ const Display = () => {
         </p>
       </div>
 
+      <section className={styles.searchJob}>
+        <input type="text" placeholder="Pesquisar vaga" onChange={(e)=>setSearchJob(e.target.value)}/>
+      </section>
+
       <section className={styles.jobsSearchLength}>
         {length ? <p>Total de vagas encontradas: {length}</p> : ""}
         {apiHandler.message}
@@ -90,7 +103,7 @@ const Display = () => {
       <div className={styles.wrapper}>
         {loading ? (
           <p>Carregando...</p>
-        ) : message === "OK" ? (
+        ) : message === "OK" && length > 0 ? (
           jobs
             .slice(currentIndexToDisplay, currentIndexToDisplay + 6)
             .map((job, index) => (

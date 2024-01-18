@@ -1,7 +1,7 @@
 class Jobs {
     jobSetupDefault(){
         const jobsDefault = {
-            keyword: "",
+            keyword: "Development",
             location: "Brazil",
             dateSincePosted: "past month",
             jobType: "full time",

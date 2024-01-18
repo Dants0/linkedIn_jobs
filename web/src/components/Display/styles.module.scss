@@ -1,22 +1,26 @@
-.container{
-    .content{
+.container {
+    .content {
         margin: 10px 100px 5px 100px;
         display: flex;
         align-items: center;
-        h2{
+
+        h2 {
             text-decoration: underline;
         }
-        p{
+
+        p {
             text-transform: uppercase;
         }
     }
-    .wrapper{
+
+    .wrapper {
         display: grid;
         grid-template-columns: auto auto auto;
         grid-template-rows: auto auto;
         margin: 100px;
         gap: 10px;
-        .jobs{
+
+        .jobs {
             border: 1px solid white;
             display: flex;
             flex-direction: column;
@@ -28,19 +32,45 @@
             border-radius: 10px;
         }
     }
-    .navigator{
+
+    .navigator {
         width: 100%;
         display: flex;
         justify-content: space-evenly;
         height: 100px;
         align-items: center;
-        background-color:white;
-        button{
-            color: black;
-        }
-    } 
-    .jobsSearchLength{
-        margin: 100px;
-    }  
-}
+        background-color: white;
 
+        button {
+            cursor: pointer;
+            color: black;
+            border: none;
+            width: 25%;
+            height: 40%;
+
+            &:nth-child(2) {
+                background-color: gray;
+                transition: all 0.3s;
+                &:hover {
+                    background-color: green;
+                    transition: all 0.3s;
+                    color: white;
+                }
+            }
+
+            &:nth-child(1) {
+                background-color: gray;
+                transition: all 0.3s;
+                &:hover {
+                    background-color: yellow;
+                    transition: all 0.3s;
+                }
+            }
+
+        }
+    }
+
+    .jobsSearchLength {
+        margin: 100px;
+    }
+}

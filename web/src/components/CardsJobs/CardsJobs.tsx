@@ -23,7 +23,7 @@ const CardsJobs = (props: Jobs) => {
       <p>{agoTime ? <p>Dias de publicação: {agoTime} </p> : ""}</p>
       <p>Local: {location}</p>
       <p>Empresa: {company}</p>
-      <a href={jobUrl} className={styles.redirectJob}>
+      <a href={jobUrl} target="_blank" className={styles.redirectJob}>
         Link da Vaga
       </a>
     </div>

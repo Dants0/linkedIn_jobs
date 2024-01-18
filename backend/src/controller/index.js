@@ -87,7 +87,7 @@ Query.prototype.getSalary = function () {
  *
  */
 Query.prototype.url = function (start) {
-  let query = `https://${this.host}/jobs-guest/jobs/api/seeMoreJobPostings/search?`;
+  let query = `https://${this.host}/jobs-guest/jobs/api/seeMoreJobPostings/search?_l=pt_BR`;
   if (this.keyword !== "") query += `keywords=${this.keyword}`;
   if (this.location !== "") query += `&location=${this.location}`;
   if (this.getDateSincePosted() !== "")

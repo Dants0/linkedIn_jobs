@@ -91,9 +91,9 @@ const Display = () => {
         </p>
       </div>
 
-      <section className={styles.searchJob}>
+      {/* <section className={styles.searchJob}>
         <input type="text" placeholder="Pesquisar vaga" onChange={(e)=>setSearchJob(e.target.value)}/>
-      </section>
+      </section> */}
 
       <section className={styles.jobsSearchLength}>
         {length ? <p>Total de vagas encontradas: {length}</p> : ""}

@@ -62,7 +62,7 @@ const Display = () => {
   // function searchJobApi(keyword){
   //   axios.get(ApiHandlerConfig.getSearchedJob).then( async (response) => {
   //     const data = await response.data;
-
+  //
   //   })
   // }
 
